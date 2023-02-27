@@ -1,0 +1,310 @@
+/*AJUSTAR EL TAMA;O DE PROJECT DETAILS AL TAMA;O D PANTALLA CUANDO SE ACHIQUE.*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+*{
+    
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Titillium Web";
+
+}
+
+/*AGREGADO BARRA NAVEGACION FLOTANTE CIRCULAR*/
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+/* menu desplegable */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #029494;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+/*ancla a diferentes secciones*/
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #029494;
+    color: #e6e6e6;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+
+
+/*SECCION REDES SOCIALES*/
+.inicio .redes_sociales{
+    margin-bottom: 15px;
+}
+.inicio .redes_sociales a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #1CB698;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.inicio .redes_sociales a:hover{
+    color: #fff;
+    background-color: #1CB698;
+    box-shadow: 0 0 20px #fff;
+}
+
+
+
+section#seccion-principal{
+    background-image: url(https://www.hostingplus.lat/wp-content/uploads/2021/11/editor_codigo.jpg);
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center
+}
+
+
+
+.circular--square {
+    border-radius: 50%;
+    border-style:initial;
+    margin-top: 20px;
+  }
+
+h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family:'Permanent Marker', cursive;
+    backface-visibility: initial;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight:lighter;
+    color: rgb(188, 216, 221);
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 5px; 
+    
+}
+
+
+#experiencia h3{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+#segundo-titulo{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: bisque;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    background-color: none;   
+}
+
+
+body{
+    background-color: rgba(70, 22, 55, 0.884);  
+}
+
+
+.lista-educacion,.lista-de-experiencia-laboral{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(24, 36, 41);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.lista_datos_personales{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  
+}
+
+
+
+.project-detail{
+    
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.project-detail img{
+    width: 80%;
+    height: min-content;
+    justify-content: center;
+    border-radius: 20%;
+   
+}
+
+
+
+ul li,p,label{
+    color:rgb(188, 216, 221);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 3px;
+    font-size: small;
+    font-weight:200;
+    list-style:none;
+    justify-content: center;
+    position: static;
+    list-style-type: circle;
+  
+
+}
+
+/*SECCION CONTACTO*/
+
+.contacto{
+    background-color: black;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+    width: 50%;
+    padding: 10px;
+}
+
+#col1{
+    width:auto;
+}
+
+.contacto .contenido-seccion .fila .col h2{
+    color: #029494;
+}
+
+/*enviar mensaje*/
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+
+/*SECCION BOTON*/
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+/*EFECTO overlay AL BOTON*/
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+
