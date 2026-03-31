@@ -99,10 +99,13 @@ section#seccion-principal{
 
 
 .circular--square {
+    width: 140px; 
+    height: 140px;
+    object-fit: cover; 
     border-radius: 50%;
-    border-style:initial;
-    margin-top: 20px;
-  }
+    margin: 20px auto; 
+    display: block; 
+}
 
 h1{
     font-size: 3rem;
@@ -162,8 +165,10 @@ h3{
 }
 
 
-body{
-    background-color: rgba(70, 22, 55, 0.884);  
+body {
+    background-color: #0f172a; 
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif; /* Usá una fuente sans-serif moderna */
 }
 
 
